@@ -42,7 +42,7 @@ App.onLaunch = function(options) {
                     if(success) {
                     // 3
                     resourceLoader = new ResourceLoader(options.BASEURL);
-                    resourceLoader.loadResource(`${options.BASEURL}templates/RWDevConTemplate.xml.js`, function(resource) {
+                    resourceLoader.loadResource(`${options.BASEURL}templates/Template.xml.js`, function(resource) {
                                                 var doc = Presenter.makeDocument(resource);
                                                 doc.addEventListener("select", Presenter.load.bind(Presenter)); 
                                                 Presenter.pushDocument(doc);
